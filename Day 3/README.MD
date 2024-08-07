@@ -1,13 +1,13 @@
 # Day 3 Of the lecture
 ## Covered concepts
 1.Files and streams
-    - How Java file reading is treated as streams of bytes
-    - Different types of Data - Temporary v.s Persistent data
+    1. How Java file reading is treated as streams of bytes
+    2. Different types of Data - Temporary v.s Persistent data
         - Temporary Data - Data that is stored and lost within the code. when the code is done executing, the information of that variable is then lost
         - Persistent Data - Data that remains for a long period on the drive, Example includes files, this data is normally stored on the secondary disk drives like Hard drive 
-    - File Stream - What is a file stream and the methods at which java uses to read file as a stream ** need to fix this **
+    3. File Stream - What is a file stream and the methods at which java uses to read file as a stream ** need to fix this **
         - File Stream is used to input/output data as either a character or bytes, whereby bytes refer to binary and character refers to a text that a human brain can read
-    - Three Types of Stream 
+    4. Three Types of Stream 
         -  ``` System.in ``` : Standard input stream, reads bytes from the keyboard
         -  ``` System.out ```: Standard output stream, outputting character  data on the screen.
         -  ``` System.err `` : Standard Error stream, outputs a character based error message to screen.
@@ -30,7 +30,7 @@
 3. Formatter Closed Exception - If the file was closed, a user should should not be able to read/write the file, hence this exception!
 4. No Such Element Exception - If the data being read by the scanner method is in a wrong format , eg:- expected an integer but the user entered a string
 5. Illegal State Exception - The Scanner was closed but the user wants to write to that file
-4. System Exit - When you want to terminate the program then ``` System.Exit(1) ``` will become handy
+6. System Exit - When you want to terminate the program then ``` System.Exit(1) ``` will become handy
 ## Object Serialization
 - This is a process whereby the file is being read/writing 
     - Writing from a file is referred as serialisation

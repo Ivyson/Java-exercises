@@ -20,9 +20,9 @@ Welcome to the Class Exercises Repository! This repository contains a collection
 2. **Navigate to an Exercise**
 
    Each exercise is organized in its own folder. Navigate to the desired exercise folder to view the code and associated documentation. For example:
-   (```bash
+   ```bash
    cd Day 2/exercise1
-   ```)
+   ```
 ## Exercise List
 
 Below is a list of exercises included in this repository:

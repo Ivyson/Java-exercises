@@ -49,6 +49,8 @@ public class Child extends Parent ``` the keywors ``` super() ``` will call the 
 ## Consultation
 Check this project to see how i worked on integrating both GUI and File reading in this <a href="https://github.com/Ivyson/Notepad-Example">Project</a>
 
-```java
-Hello guys
-```
+```html
+<pre style="color: blue; background-color: lightgray;">
+System.out.println("Hello World");
+</pre>
+

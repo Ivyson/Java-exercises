@@ -181,8 +181,3 @@
 ## Consultation
 
 Check this project to see how I integrated both GUI and file reading: [Notepad Example](https://github.com/Ivyson/Notepad-Example)
-
-```html
-<pre style="color: blue; background-color: lightgray;">
-System.out.println("Hello World");
-</pre>

@@ -33,10 +33,13 @@
 6. System Exit - When you want to terminate the program then ``` System.Exit(1) ``` will become handy
 ## Object Serialization
 - This is a process whereby the file is being read/writing 
-    - Writing from a file is referred as serialisation
-    - Reading from a file is referred as deserialisation
+    - Writing from a file is referred as serialisation - When writing to a file, information can only be appended on the last sentence or we clear the whole sentence and appending data serially, meaning if you are having a string ``` Name = "My name is Sam" ``` , the string will be appended or written in the same order as specified.
+    - Reading from a file is referred as deserialisation - When reading Data from a file, you can read from any line irregardless where it starts.
 - I need to understand to understand hwo this whole idea fits into FileOutputStream conjoins ObjectOutputStream, Same idea applies to FileInputStream and ObjectInputStream
+- Understand the tags ``` public class Main implements Serializable ```, this tag makes reading to a file be serial!
 - Go to page 18 
+- Transient Variables, A variable that cannot be serialised, therefore this variable can be ignored by the serial functionality
+- Try out the code at page 19 where by we read file that has a binary content ``` clients.ser ```
 
 ## Consultation
 Check this project to see how i worked on integrating both GUI and File reading in this <a href="https://github.com/Ivyson/Notepad-Example">Project</a>

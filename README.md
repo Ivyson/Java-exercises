@@ -1,4 +1,3 @@
-```markdown
 # Class Exercises Repository
 
 Welcome to the Class Exercises Repository! This repository contains a collection of exercises assigned during our class sessions. Each exercise is designed to help reinforce concepts covered in lectures and provide hands-on practice with various programming topics.
@@ -38,7 +37,3 @@ Below is a list of exercises included in this repository:
 3. **Day 3: File Handling, Streams and Object Serialization**
    - **Description**: File Manipulation, More details about this is covered on the Day 2 Directory
    - **Folder**: `/Day 3/`
-
-```
-
-

@@ -8,9 +8,9 @@
     - File Stream - What is a file stream and the methods at which java uses to read file as a stream ** need to fix this **
         - File Stream is used to input/output data as either a character or bytes, whereby bytes refer to binary and character refers to a text that a human brain can read
     - Three Types of Stream 
-        - ``` System.in ``` : Standard input stream, reads bytes from the keyboard
-        - ``` System.out ```: Standard output stream, outputting character  data on the screen.
-        - ``` System.err `` : Standard Error stream, outputs a character based error message to screen.
+        -  ``` System.in ``` : Standard input stream, reads bytes from the keyboard
+        -  ``` System.out ```: Standard output stream, outputting character  data on the screen.
+        -  ``` System.err `` : Standard Error stream, outputs a character based error message to screen.
     - Other streams include methods from the ``` System ``` Class,  methods include ``` setIn ```, ``` setOut ``` , ``` setErr ```. These redirect inputs and outputs to different to to other devices or files etc..
 ### Main Stream classes
 1. FileInputStream - provides a byte based input to a file.

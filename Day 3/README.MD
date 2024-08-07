@@ -3,62 +3,186 @@
 ## Covered Concepts
 
 1. **Files and Streams**
-    1. How Java file reading is treated as streams of bytes.
-    2. Different Types of Data
-        - **Temporary Data**: Data that is stored and lost within the code. When the code finishes executing, the information is lost.
-        - **Persistent Data**: Data that remains for a long period on the drive. Examples include files, which are typically stored on secondary storage like hard drives.
-    3. **File Stream**: Understanding file streams and methods Java uses to read files as streams.
-        - File streams handle input/output data as either characters or bytes. Bytes refer to binary data, while characters refer to human-readable text.
+    1. **Java File Reading as Streams**
+        - In Java, file reading is treated as a stream of bytes. This means data from a file is read in a continuous flow rather than as discrete chunks.
+        - Java provides abstractions for both byte-based and character-based streams.
+        
+    2. **Different Types of Data**
+        - **Temporary Data**: Data that exists only during the execution of a program. It is lost when the program terminates. Examples include local variables.
+        - **Persistent Data**: Data that is stored permanently on disk. Examples include files, which remain on the disk until explicitly deleted. Persistent data is stored on secondary storage like hard drives.
+
+    3. **File Stream**
+        - **Definition**: A file stream in Java is an abstract mechanism to handle file input and output as a sequence of bytes or characters.
+        - **Byte Streams**: Handle raw binary data. Examples include `FileInputStream` and `FileOutputStream`.
+        - **Character Streams**: Handle data as characters and are useful for reading and writing text. Examples include `FileReader` and `FileWriter`.
+        - **Example Usage**:
+            ```java
+            // Reading bytes from a file
+            FileInputStream fileInputStream = new FileInputStream("example.txt");
+            int data;
+            while ((data = fileInputStream.read()) != -1) {
+                System.out.print((char) data);
+            }
+            fileInputStream.close();
+            
+            // Writing bytes to a file
+            FileOutputStream fileOutputStream = new FileOutputStream("example.txt");
+            fileOutputStream.write("Hello, World!".getBytes());
+            fileOutputStream.close();
+            ```
+
     4. **Three Types of Streams**
-        - `System.in`: Standard input stream, reads bytes from the keyboard.
-        - `System.out`: Standard output stream, outputs character data to the screen.
-        - `System.err`: Standard error stream, outputs character-based error messages to the screen.
-        - Other streams include methods from the `System` class, such as `setIn`, `setOut`, and `setErr`, which redirect inputs and outputs to different devices or files.
+        - **`System.in`**: Standard input stream, which reads bytes from the keyboard.
+        - **`System.out`**: Standard output stream, which outputs character data to the screen.
+        - **`System.err`**: Standard error stream, which outputs error messages to the screen.
+        - **Other Methods**: `System` class methods like `setIn()`, `setOut()`, and `setErr()` can redirect input and output streams to different sources like files or network connections.
 
 ### Main Stream Classes
 
-1. **FileInputStream**: Provides byte-based input from a file.
-2. **FileOutputStream**: Provides byte-based output to a file.
-3. **FileReader**: Provides character-based input from a file. Reads content from a file.
-4. **FileWriter**: Provides character-based output to a file. Writes data to a file.
-    - Need to explore `ObjectOutputStream` and `ObjectInputStream`, as well as `Scanner` and `Formatter`.
+1. **FileInputStream**
+    - Provides byte-based input from a file.
+    - Useful for reading binary data such as image files.
+    
+2. **FileOutputStream**
+    - Provides byte-based output to a file.
+    - Useful for writing binary data.
+
+3. **FileReader**
+    - Provides character-based input from a file.
+    - Suitable for reading text files.
+    - Example:
+        ```java
+        FileReader fileReader = new FileReader("example.txt");
+        int character;
+        while ((character = fileReader.read()) != -1) {
+            System.out.print((char) character);
+        }
+        fileReader.close();
+        ```
+
+4. **FileWriter**
+    - Provides character-based output to a file.
+    - Suitable for writing text files.
+    - Example:
+        ```java
+        FileWriter fileWriter = new FileWriter("example.txt");
+        fileWriter.write("Hello, World!");
+        fileWriter.close();
+        ```
+
+    - **ObjectOutputStream** and **ObjectInputStream**: Used for serializing and deserializing objects, respectively.
+    - **Scanner**: A utility for parsing input data.
+    - **Formatter**: Used for formatting output.
 
 ### File Constructors in the File Class
 
-- **Relative/Absolute Path**: Obtaining the path of a file. Absolute paths start with `C:\Users\User\Downloads...`.
-    1. **Code** `new File(...)` accepts several arguments, with the path being mandatory.
-        - A relative path is used when the file is in the same directory as the Java project.
-        - An absolute path is used to access files from anywhere in the system, typically displayed as `C:\Users\User\Downloads...`.
-    2. Refer to Page 7 for methods to manipulate files. [Click here](SDN260S_2024_files_streams_object_serialization.pdf) for the document.
+- **Relative/Absolute Path**
+    - **Relative Path**: Path relative to the current working directory of the program.
+    - **Absolute Path**: Full path from the root of the file system (e.g., `C:\Users\User\Downloads\file.txt`).
+
+    - **Example**:
+        ```java
+        File file = new File("example.txt"); // Relative path
+        File file = new File("C:\\Users\\User\\Downloads\\example.txt"); // Absolute path
+        ```
+
+    - Refer to [this document](SDN260S_2024_files_streams_object_serialization.pdf) for more details on file manipulation methods.
 
 ## Exceptions for File Manipulations
 
-1. **SecurityException**: Thrown when there is no permission to read or write the file.
-2. **FileNotFoundException**: Thrown when the file is not found.
-3. **FormatterClosedException**: Thrown if the file was closed and a read/write operation is attempted.
-4. **NoSuchElementException**: Thrown if data being read by the scanner is in the wrong format (e.g., expecting an integer but a string is provided).
-5. **IllegalStateException**: Thrown if the scanner is closed but a write operation is attempted.
-6. **SystemExit**: Use `System.exit(1)` to terminate the program.
+1. **SecurityException**
+    - Thrown if the application does not have permission to access a file.
+
+2. **FileNotFoundException**
+    - Thrown if the file specified cannot be found.
+
+3. **FormatterClosedException**
+    - Thrown if operations are attempted on a formatter after it has been closed.
+
+4. **NoSuchElementException**
+    - Thrown if an element is requested from a scanner that is not present.
+
+5. **IllegalStateException**
+    - Thrown if an operation is performed on a scanner after it has been closed.
+
+6. **SystemExit**
+    - `System.exit(1)` can be used to terminate a program and indicate an error status.
 
 ## Object Serialization
 
-- **Serialization**: The process of writing data to a file. When writing to a file, data is appended or written in the specified order.
-- **Deserialization**: The process of reading data from a file. You can read data from any line regardless of where it starts.
-- Understand how `FileOutputStream` and `ObjectOutputStream` work together, as well as `FileInputStream` and `ObjectInputStream`.
-- The tag `public class Main implements Serializable` makes the class serializable.
-- Refer to page 18 for more details.
-- **Transient Variables**: Variables that cannot be serialized and are ignored by the serialization process.
-- Try out the code on page 19 with binary content (e.g., `clients.ser`).
+- **Serialization**: The process of converting an object into a byte stream for storage or transmission.
+    - **Example**:
+        ```java
+        FileOutputStream fileOut = new FileOutputStream("data.ser");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        out.writeObject(object);
+        out.close();
+        fileOut.close();
+        ```
+
+- **Deserialization**: The process of converting a byte stream back into an object.
+    - **Example**:
+        ```java
+        FileInputStream fileIn = new FileInputStream("data.ser");
+        ObjectInputStream in = new ObjectInputStream(fileIn);
+        MyObject object = (MyObject) in.readObject();
+        in.close();
+        fileIn.close();
+        ```
+
+- **Serializable Interface**: A class must implement `Serializable` to be serialized.
+    - **Example**:
+        ```java
+        public class MyObject implements Serializable {
+            private static final long serialVersionUID = 1L;
+            private String name;
+            // other fields and methods
+        }
+        ```
+
+- **Transient Variables**: Variables marked as `transient` are not serialized. They are ignored during the serialization process.
+
+- **Example of Transient**:
+    ```java
+    public class MyObject implements Serializable {
+        private static final long serialVersionUID = 1L;
+        private String name;
+        private transient int tempData; // This will not be serialized
+    }
+    ```
+
+- **Refer to Page 18** for more details on serialization.
+
+- **Binary File Example**: Try out the code on page 19 to read files with binary content (e.g., `clients.ser`).
 
 ## Message for Today
 
-- Go through the code on the slides and understand it!
+- Review and understand the code examples provided on the slides.
 
 ## Things Learned Through Today's Practices
 
-1. The keyword `super()` is used to refer to a parent class of an object. If you have a class with `public class Child extends Parent`, the keyword `super()` will call the constructor of `Parent`.
+1. **`super()` Keyword**: Used to call a constructor of the parent class. It allows access to parent class methods and fields.
+    - **Example**:
+        ```java
+        public class Parent {
+            public Parent() {
+                System.out.println("Parent constructor");
+            }
+        }
+
+        public class Child extends Parent {
+            public Child() {
+                super(); // Calls Parent constructor
+                System.out.println("Child constructor");
+            }
+        }
+        ```
 
 ## Consultation
 
 Check this project to see how I integrated both GUI and file reading: [Notepad Example](https://github.com/Ivyson/Notepad-Example)
 
+```html
+<pre style="color: blue; background-color: lightgray;">
+System.out.println("Hello World");
+</pre>

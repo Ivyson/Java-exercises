@@ -36,3 +36,4 @@
     - Writing from a file is referred as serialisation
     - Reading from a file is referred as deserialisation
 - I need to understand to understand hwo this whole idea fits into FileOutputStream conjoins ObjectOutputStream, Same idea applies to FileInputStream and ObjectInputStream
+- Go to page 18

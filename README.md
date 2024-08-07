@@ -4,9 +4,9 @@ Welcome to the Class Exercises Repository! This repository contains a collection
 
 ## Repository Structure
 
-- **`/exercises`**: Contains folders for each exercise with the respective code and documentation.
+- **`/Day ..`**: Contains folders for each exercise with the respective code and documentation.
 - **`README.md`**: This file, providing an overview of the repository and instructions on how to use it.
-- **`/docs`**: Optional folder for additional documentation or reference materials.
+
 
 ## Getting Started
 

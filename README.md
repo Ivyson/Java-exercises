@@ -22,23 +22,22 @@ Welcome to the Class Exercises Repository! This repository contains a collection
 
    Each exercise is organized in its own folder. Navigate to the desired exercise folder to view the code and associated documentation. For example:
    ```bash
-   cd exercises/exercise1
+   cd Day 2/exercise1
    ```
-
-
-
-
 ## Exercise List
 
 Below is a list of exercises included in this repository:
 
-1. **Day 1: Basic Java Syntax**
+1. **Day 1: Basic Java Syntax && Object-Oriented Programming (OOP**
    - **Description**: Introduction to basic syntax and data types in Java.
    - **Folder**: `/Day 1/`
 
-2. **Day 2: Object-Oriented Programming (OOP)**
-   - **Description**: Practice with classes, inheritance, and polymorphism.
+2. **Day 2:Strings Characters & Regular Expressions**
+   - **Description**: Practice with Strings, String Builders and Regular expressions conditionals.
    - **Folder**: `/Day 2/`
+3. **Day 3: File Handling, Streams and Object Serialization**
+   - **Description**: File Manipulation, More details about this is covered on the Day 2 Directory
+   - **Folder**: `/Day 3/`
 
 ```
 

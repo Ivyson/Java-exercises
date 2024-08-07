@@ -42,6 +42,8 @@
 - Try out the code at page 19 where by we read file that has a binary content ``` clients.ser ```     
 ## Message for today
 - Go through the codes on the slides and understand them!
-
+## Things learnt through today's Practices
+1. The keyword ``` super() ``` is used to refer to a parent class of an object, The parent class is the one we inherit its content, If you have a code that has a tag ``` public class Child extends Parent ``` the keywors ``` super() ``` will call the constructor of ``` Parent ```.
+2. 
 ## Consultation
 Check this project to see how i worked on integrating both GUI and File reading in this <a href="https://github.com/Ivyson/Notepad-Example">Project</a>

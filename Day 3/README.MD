@@ -1,6 +1,6 @@
 # Day 3 Of the lecture
 ## Covered concepts
-1.Files and streams
+1. Files and streams
     1. How Java file reading is treated as streams of bytes
     2. Different types of Data - Temporary v.s Persistent data
         - Temporary Data - Data that is stored and lost within the code. when the code is done executing, the information of that variable is then lost

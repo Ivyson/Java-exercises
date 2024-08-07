@@ -36,4 +36,7 @@
     - Writing from a file is referred as serialisation
     - Reading from a file is referred as deserialisation
 - I need to understand to understand hwo this whole idea fits into FileOutputStream conjoins ObjectOutputStream, Same idea applies to FileInputStream and ObjectInputStream
-- Go to page 18
+- Go to page 18 
+
+## Consultation
+Check this project to see how i worked on integrating both GUI and File reading in this <a href="https://github.com/Ivyson/Notepad-Example">Project</a>

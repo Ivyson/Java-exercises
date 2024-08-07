@@ -14,19 +14,11 @@ This Class mainly focused on understanding and practicing with strings, string b
 ```
 /Day 2/
 |-- Exercise 1/
-|   |-- Main.java (or Main.py / main.js)
-|   |-- StringManipulation.java (or .py / .js)
-|   |-- StringBuilderExample.java (or .py / .js)
-|   |-- RegexExamples.java (or .py / .js)
+|   |-- Comparing.java 
 |-- Exercise 2/
-|   |-- Main.java (or Main.py / main.js)
-|   |-- StringManipulation.java (or .py / .js)
-|   |-- StringBuilderExample.java (or .py / .js)
-|   |-- RegexExamples.java (or .py / .js)
+|   |-- Cportion.java
 |-- Exercise 3/
-|   |-- StringManipulationTest.java (or .py / .js)
-|   |-- StringBuilderExampleTest.java (or .py / .js)
-|   |-- RegexExamplesTest.java (or .py / .js)
+|   |-- RandomSentence.java 
 |-- README.md
 ```
 

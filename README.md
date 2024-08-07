@@ -14,9 +14,9 @@ Welcome to the Class Exercises Repository! This repository contains a collection
 1. **Clone the Repository**
 
    To get a local copy of this repository, use the following command:
-   ```bash
+     ```bash
    git clone https://github.com/Ivyson/Java-exercises.git
-   ```
+     ```
 
 2. **Navigate to an Exercise**
 

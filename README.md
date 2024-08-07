@@ -33,7 +33,7 @@ Below is a list of exercises included in this repository:
 
 2. **Day 2:Strings Characters & Regular Expressions**
    - **Description**: Practice with Strings, String Builders and Regular expressions conditionals.
-   - **Folder**: `/Day 2/`
+   - **Folder**: `/Day 2/` <a href = "https://github.com/Ivyson/Java-exercises/tree/main/Day%202">Click Here</a>
 3. **Day 3: File Handling, Streams and Object Serialization**
    - **Description**: File Manipulation, More details about this is covered on the Day 2 Directory
    - **Folder**: `/Day 3/`

@@ -10,7 +10,7 @@
     4. Three Types of Stream 
         -  ``` System.in ``` : Standard input stream, reads bytes from the keyboard
         -  ``` System.out ```: Standard output stream, outputting character  data on the screen.
-        -  ``` System.err `` : Standard Error stream, outputs a character based error message to screen.
+        -  ``` System.err ``` : Standard Error stream, outputs a character based error message to screen.
     - Other streams include methods from the ``` System ``` Class,  methods include ``` setIn ```, ``` setOut ``` , ``` setErr ```. These redirect inputs and outputs to different to to other devices or files etc..
 ### Main Stream classes
 1. FileInputStream - provides a byte based input to a file.

@@ -15,7 +15,7 @@
 ### Main Stream classes
 1. FileInputStream - provides a byte based input to a file.
 2. FileOutputStream - provides a byte based output to a file
-3. FileReader - Provides a character based input from a file ** Need to go through this **Reads content  from a file
+3. FileReader - Provides a character based input from a file ** Need to go through this ** Reads content  from a file
 4. FileWritter - Provides a character output from a file ** Writes data to a file **
     - Need to go through ObjectOutputSteam and ObjectInputSteam  Scanner and Formatter
 ### File constructors that are available form the File Class

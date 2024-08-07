@@ -39,7 +39,9 @@
 - Understand the tags ``` public class Main implements Serializable ```, this tag makes reading to a file be serial!
 - Go to page 18 
 - Transient Variables, A variable that cannot be serialised, therefore this variable can be ignored by the serial functionality
-- Try out the code at page 19 where by we read file that has a binary content ``` clients.ser ```
+- Try out the code at page 19 where by we read file that has a binary content ``` clients.ser ```     
+## Message for today
+- Go through the codes on the slides and understand them!
 
 ## Consultation
 Check this project to see how i worked on integrating both GUI and File reading in this <a href="https://github.com/Ivyson/Notepad-Example">Project</a>

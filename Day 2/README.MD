@@ -42,6 +42,11 @@ This Class mainly focused on understanding and practicing with strings, string b
 ### 4. Regular Expressions
 
 - **Basics of Regular Expressions**: Introduction to regex syntax and basic concepts like literals, character classes, quantifiers, and anchors.
+  -Some special predifined symbols used in Regular Expression 
+    1. Digit: [` \d `]  Used to search if a string contains any Digit [0-9]
+    2. Non - Digit: [` \D `] 
+    3. Word: If any string matches any letter, underscore or any digit, ``` "[w]" ```, If its ``` "[\W]" ```, then it means Not words, or anything covered in this line!
+    4. White space: If a string contains Any White spacing or tab or new line ``` "[\s]" ```, If ``` "[\S]" ``` Then it means the opposite
 - **Pattern Matching**: Learn how to use regular expressions to search, match, and replace patterns in strings.
 - **Advanced Regular Expressions**: Explore more advanced topics like lookaheads, lookbehinds, capturing groups, and non-capturing groups.
 

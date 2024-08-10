@@ -47,6 +47,7 @@ This Class mainly focused on understanding and practicing with strings, string b
     2. Non - Digit: [` \D `] 
     3. Word: If any string matches any letter, underscore or any digit, ``` "[w]" ```, If its ``` "[\W]" ```, then it means Not words, or anything covered in this line!
     4. White space: If a string contains Any White spacing or tab or new line ``` "[\s]" ```, If ``` "[\S]" ``` Then it means the opposite
+#### Common Regular Expression Symbols
 <div style="text-align: center;">
 <table style="display:flex; align-items:center; justify-content:center;">
   <tr>

@@ -87,14 +87,12 @@ This Class mainly focused on understanding and practicing with strings, string b
   - To use Pattern Matching we need to firstly ensure that we have imported the following libraries: 
     ```java
       import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-public class WordBoundaryExample {
-    public static void main(String[] args) {
+      import java.util.regex.Pattern;
+      public class WordBoundaryExample {
+      public static void main(String[] args) {
         // Define the pattern
         String patternString = "\\bword\\b";  // Matches the word 'word' as a whole word
         Pattern pattern = Pattern.compile(patternString);
-
         // Search the string
         String text = "This is a word in a sentence.";
         Matcher matcher = pattern.matcher(text);

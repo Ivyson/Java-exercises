@@ -84,7 +84,29 @@ This Class mainly focused on understanding and practicing with strings, string b
 
 
 - **Pattern Matching**: Learn how to use regular expressions to search, match, and replace patterns in strings.
-- **Advanced Regular Expressions**: Explore more advanced topics like lookaheads, lookbehinds, capturing groups, and non-capturing groups.
+  - To use Pattern Matching we need to firstly ensure that we have imported the following libraries: 
+    ```java
+      import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class WordBoundaryExample {
+    public static void main(String[] args) {
+        // Define the pattern
+        String patternString = "\\bword\\b";  // Matches the word 'word' as a whole word
+        Pattern pattern = Pattern.compile(patternString);
+
+        // Search the string
+        String text = "This is a word in a sentence.";
+        Matcher matcher = pattern.matcher(text);
+
+        if (matcher.find()) {
+            System.out.println("Match found: " + matcher.group());
+        } else {
+            System.out.println("No match found.");
+        }
+    }
+}
+```
 
 ## Examples and Exercises
 The Exercise questions are provided on the actual PDF on the last page,the subfolders here are having my own answers

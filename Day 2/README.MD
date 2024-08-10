@@ -50,23 +50,23 @@ This Class mainly focused on understanding and practicing with strings, string b
 <table style="display:flex; align-items:center; justify-content:center;">
   <tr>
     <th>Character</th>
-    <th>Symbol</th>
-    <th>City</th>
+    <th>Matches</th>
   </tr>
   <tr>
-    <td>Alice</td>
-    <td>30</td>
-    <td>New York</td>
+    <td>[\d]</td>
+    <td>Any Digit</td>
   </tr>
   <tr>
-    <td>Bob</td>
-    <td>25</td>
-    <td>San Francisco</td>
+    <td>[\D]</td>
+    <td>Any Non-digit</td>
   </tr>
   <tr>
-    <td>Charlie</td>
-    <td>35</td>
-    <td>Los Angeles</td>
+    <td>[\w]</td>
+    <td>Any alphabet, digit or underscore</td>
+  </tr>
+  <tr>
+    <td>[\s]</td>
+    <td>Any white space, tab or new line</td>
   </tr>
 </table>
 

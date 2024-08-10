@@ -104,6 +104,68 @@ This Class mainly focused on understanding and practicing with strings, string b
         }
         }
         }
-
+## REGEX Operators
+<table>
+<tr>
+<th>Usage</th>
+<th>Example</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>abc</th>
+<td>abc</th>
+<td>Matches any string = "abc"</th>
+</tr>
+<tr>
+<td>Dot (<b>.</b)</th>
+<td>a.c</th>
+<td>Matches String "abc", "atc" etc, but not "ac"</th>
+</tr>
+<tr>
+<td>Square Brackets (<b>[]</b>)</th>
+<td><b>[aeiou]</b></th>
+<td>Matches any vowel, basically matching at least one of the characters in the square brackets</th>
+</tr>
+<tr>
+<td><b>[^]</b></th>
+<td><b>[^aeiou]</b></th>
+<td>Negating, Matches any character that is not a vowel or not included in that square brackets</th>
+</tr>
+<tr>
+<td>Dollar Sign <b> $ </b></th>
+<td><b>abc$</b></th>
+<td>Matches any String that ends with "...abc"</th>
+</tr>
+<tr>
+<td>Caret <b>^</b></th>
+<td><b>^abc</b></th>
+<td>Any String that starts with "abc..."</th>
+</tr>
+<tr>
+<td>Word Boundary <b>\b</b></th>
+<td>\bword\b</th>
+<td>Any wprd that has "word" in it, whole "word" string as it is</th>
+</tr>
+<tr>
+<td>Asterisk <b> * </b></th>
+<td><b>a*</b></th>
+<td>Matches 0 or more occurences of the preceding word, "a" for this instance.</th>
+</tr>
+<tr>
+<td>plus Sign <b>+</b></th>
+<td>a+</th>
+<td>Matches 1 or more of the occurances of the preceding words</th>
+</tr>
+<tr>
+<td>Question Mark <b> ? </b></th>
+<td><b> a? </b></th>
+<td>Matches 0 or 1 occurences of the preceeding words</th>
+</tr>
+<tr>
+<td>Braces <b> {} </b></th>
+<td>a{n,m}</th>
+<td>Matches between n and , occurances of the preceding element, If a occurs at least n times or the maximum m times</th>
+</tr>
+</table>
 ## Examples and Exercises
 The Exercise questions are provided on the actual PDF on the last page,the subfolders here are having my own answers

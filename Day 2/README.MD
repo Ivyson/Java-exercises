@@ -47,12 +47,29 @@ This Class mainly focused on understanding and practicing with strings, string b
     2. Non - Digit: [` \D `] 
     3. Word: If any string matches any letter, underscore or any digit, ``` "[w]" ```, If its ``` "[\W]" ```, then it means Not words, or anything covered in this line!
     4. White space: If a string contains Any White spacing or tab or new line ``` "[\s]" ```, If ``` "[\S]" ``` Then it means the opposite
-```markdown
-| Left Align | Center Align | Right Align |
-| :--------- | :----------: | ----------: |
-| This       | is           | right       |
-| aligned    | centered     | aligned     |
-```
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>30</td>
+    <td>New York</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>25</td>
+    <td>San Francisco</td>
+  </tr>
+  <tr>
+    <td>Charlie</td>
+    <td>35</td>
+    <td>Los Angeles</td>
+  </tr>
+</table>
+
 - **Pattern Matching**: Learn how to use regular expressions to search, match, and replace patterns in strings.
 - **Advanced Regular Expressions**: Explore more advanced topics like lookaheads, lookbehinds, capturing groups, and non-capturing groups.
 

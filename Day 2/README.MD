@@ -47,6 +47,7 @@ This Class mainly focused on understanding and practicing with strings, string b
     2. Non - Digit: [` \D `] 
     3. Word: If any string matches any letter, underscore or any digit, ``` "[w]" ```, If its ``` "[\W]" ```, then it means Not words, or anything covered in this line!
     4. White space: If a string contains Any White spacing or tab or new line ``` "[\s]" ```, If ``` "[\S]" ``` Then it means the opposite
+<div style="text-align: center;">
 <table style="display:flex; align-items:center; justify-content:center;">
   <tr>
     <th>Character</th>
@@ -77,7 +78,7 @@ This Class mainly focused on understanding and practicing with strings, string b
     <td>Not white space, tab or new line</td>
   </tr>
 </table>
-
+</div?
 - **Pattern Matching**: Learn how to use regular expressions to search, match, and replace patterns in strings.
 - **Advanced Regular Expressions**: Explore more advanced topics like lookaheads, lookbehinds, capturing groups, and non-capturing groups.
 

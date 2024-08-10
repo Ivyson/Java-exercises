@@ -79,6 +79,9 @@ This Class mainly focused on understanding and practicing with strings, string b
   </tr>
 </table>
 </div>
+
+
+
 - **Pattern Matching**: Learn how to use regular expressions to search, match, and replace patterns in strings.
 - **Advanced Regular Expressions**: Explore more advanced topics like lookaheads, lookbehinds, capturing groups, and non-capturing groups.
 

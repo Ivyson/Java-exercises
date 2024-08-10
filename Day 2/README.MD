@@ -65,8 +65,16 @@ This Class mainly focused on understanding and practicing with strings, string b
     <td>Any alphabet, digit or underscore</td>
   </tr>
   <tr>
+    <td>[\W]</td>
+    <td>Not alphabet, digit or underscore</td>
+  </tr>
+  <tr>
     <td>[\s]</td>
     <td>Any white space, tab or new line</td>
+  </tr>
+  <tr>
+    <td>[\S]</td>
+    <td>Not white space, tab or new line</td>
   </tr>
 </table>
 

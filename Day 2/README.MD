@@ -102,8 +102,8 @@ This Class mainly focused on understanding and practicing with strings, string b
         } else {
             System.out.println("No match found.");
         }
-    }
-} ```
+        }
+        } ```
 
 ## Examples and Exercises
 The Exercise questions are provided on the actual PDF on the last page,the subfolders here are having my own answers

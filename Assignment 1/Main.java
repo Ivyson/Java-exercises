@@ -22,7 +22,7 @@ public class Main{
         {
             Matcher matcher1 = pattern.matcher(sentenceString.toLowerCase());
             if (matcher1.find()) {
-                String parsedString = "\n"+(count+1)+sentenceString.replaceFirst(matcher1.group(),matcher1.group().toUpperCase());
+                String parsedString = "\n["+(count+1)+"] "+sentenceString.replaceFirst(matcher1.group(),matcher1.group().toUpperCase());
                 System.out.printf("\n[%d] %s",(count+1),sentenceString.replaceFirst(matcher1.group(),matcher1.group().toUpperCase()));
                 Fileprocessing(parsedString);
                 count++;

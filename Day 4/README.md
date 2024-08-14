@@ -59,7 +59,7 @@
     }
     }
 ## Similarities and Differences Between Recursive functions and iterations
-- Both make use of a control statementm repitition and a termination test
+- Both make use of a control statements, repitition and a termination test
 ```Java
 for(int i = 0; i < 5; i++){
     //TO-DO CODE HERE.... As long as variable i is not 5, execute this code repetitively
@@ -93,7 +93,11 @@ for(int i = 0; i < 5; i++){
 </tr>
 </table>
 
-### Recursive functions
-- The Recursive functions are expensive for computation that has limited memory resource
+### Recursive Methods
+- The Recursive functions are expensive for computation that has limited memory resource and requires limited processor time due to an allocation of resources everytime a function call is being created, in this instance, a stack of the process is constantly growing wider and potentially reaching a stack Over-flow, whereby the process is using more resourves than the allocated resources
 - The Recursive functions are more prone to be an infinite recursion
 - The Recursive functions are normally hard to debug, so it would be better to use iterations compared to recursions
+- The Recursive functions are typically slower, so only use them when the time is not a factor and there is an abundance amount of memory!
+### Iterative Methods
+- Any functionality that can be solved using a recursive method can be solved using iteration
+- Iterations do not allow a reallocation of resources every time the loop is being repeated, so it is reasonable for memory conservation and Processor time.

@@ -49,3 +49,35 @@
         scanner.close();
     }
     }
+## Similarities and Differences Between Recursive functions and iterations
+- Both make use of a control statementm repitition and a termination test
+```Java
+for(int i = 0; i < 5; i++){
+    //TO-DO CODE HERE.... As long as variable i is not 5, execute this code repetitively
+}
+```
+```Java
+    int fib(int n){
+        return fib(n-1);
+    }
+```
+<table>
+<tr>
+<th> </th>
+<th>Recursion</th>
+<th>Iteration</th>
+</tr>
+<tr>
+<td>1. Control Statement</td>
+<td>Uses ` if ` statements to terminate itself</td>
+<td> the for loop and do-while loop has conditions in its function </td>
+</tr>
+<tr>
+<td>2. Repitition </td>
+<td>Implicit, the repition of the recursive function is only determined by the recursive call itself </td>
+<td> Explicit </td>
+</tr>
+<tr>3. Termination test</tr>
+<tr> Base Case reached </tr>
+<tr> Explicit test/ Comparison </tr>
+</table>

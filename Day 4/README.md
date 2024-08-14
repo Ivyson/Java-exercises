@@ -77,7 +77,9 @@ for(int i = 0; i < 5; i++){
 <td>Implicit, the repition of the recursive function is only determined by the recursive call itself </td>
 <td> Explicit </td>
 </tr>
-<tr>3. Termination test</tr>
-<tr> Base Case reached </tr>
-<tr> Explicit test/ Comparison </tr>
+<tr>
+<td>3. Termination test</td>
+<td> Base Case reached </td>
+<td> Explicit test/ Comparison </td>
+</tr>
 </table>

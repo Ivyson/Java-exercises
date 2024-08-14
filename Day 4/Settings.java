@@ -3,7 +3,7 @@ public class Settings {
     public Settings(){
     Scanner scanner = new Scanner(System.in);
     System.out.println();
-    System.out.printf("What operation do you want to perform\n[1].Fibonacci sequence\n[2]. Factorials\n");
+    System.out.printf("What operation do you want to perform\n[1]. Fibonacci sequence\n[2]. Factorials\n");
     int option = scanner.nextInt();
     switch (option) {
         case 1:

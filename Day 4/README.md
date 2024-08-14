@@ -48,5 +48,4 @@
         Fibonacci(second_term, first_term, num_terms);
         scanner.close();
     }
-}
-```
+    }

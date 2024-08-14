@@ -83,7 +83,7 @@ for(int i = 0; i < 5; i++){
 <td> Explicit test/ Comparison </td>
 </tr>
 </table>
-
+### Recursive functions
 - The Recursive functions are expensive for computation that has limited memory resource
 - The Recursive functions are more prone to be an infinite recursion
 - The Recursive functions are normally hard to debug, so it would be better to use iterations compared to recursions

@@ -5,8 +5,12 @@
  - Writing and using Recursive Functions
  - Determine the <b> Base Case </b> and Recursion steps in a recursive algorithm
  - Understand the difference between Recursion functions and Iterations 
-    - Break pu problem, having a replica of self
-    - Every recursive method has a base case eg
+### Basic Concept of Recursive Functions
+- Recursive method that calls itself inside the scope of itself.
+    - If a Method calls itself within its scope, this is known to be a <b><i>Direct Recursion</i></b>
+- The idea of recursive is to use one single code but multiple times, so we replicate a code multiple times until a specified requirement is met.
+- An example of this function would be a <b><i>Fibonacci sequence & Factorial Function </i></b>
+    - An Example of this method's operation is provided below using Java code:
     ```Java
     int recursive(int x)
     {
@@ -17,6 +21,7 @@
         recursive(x-1);
     }
     ```
+    - The conditional check in the code is known as a <b><i> Base Case </i></b>
     - The main great example(Possibly could be in my Test, is a Fibbonacci series and Factorial problems), I need to understand how to implement these
        - Fibbonacci sequence describe the pattern of spiral shapes (Mostly in nature) 
     ```Java 

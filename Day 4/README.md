@@ -2,6 +2,9 @@
 
 ## Outline Of Today's lecture 
  - Basic concept of Recursive Functions
+ - Writing and using Recursive Functions
+ - Determine the <b> Base Case </b> and Recursion steps in a recursive algorithm
+ - Understand the difference between Recursion functions and Iterations 
     - Break pu problem, having a replica of self
     - Every recursive method has a base case eg
     ```Java

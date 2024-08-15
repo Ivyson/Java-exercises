@@ -101,3 +101,6 @@ for(int i = 0; i < 5; i++){
 ### Iterative Methods
 - Any functionality that can be solved using a recursive method can be solved using iteration
 - Iterations do not allow a reallocation of resources every time the loop is being repeated, so it is reasonable for memory conservation and Processor time.
+## Notes 
+- Know how to implement recursive functions under a test condition, try out the provided examples and see if you can implement them and understand their functionalitites
+- Know At least how to deal and manipulate big integer data type

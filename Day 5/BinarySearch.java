@@ -1,30 +1,39 @@
-import java.util.*;
+//This code is very long and might need to be refactored!
 public class BinarySearch{
-    public static int Search(int[] array, int searchkey){
-        int left = 0;
-        int right = array.length -1;
-        int middle = (left + right)/2;
-        // int 
-        int location = -1; //If the location is found then modify the location value, otherwise \
-        do{
-            if(searchkey == array[middle]){
-                location = middle; //Return the middle index
+    public static int Search(int[] array, int lowerbound, int upperbound, int searchKey){
+        int location = -1;
+        for(int i = lowerbound; i <= upperbound; i++){
+            if(array[i] == searchKey){
+                location++;
             }
-            else if(searchkey < array[middle]){
-                right = middle -1;  //The Searchkey belongs on the lower bound, so we need to search on the lower bound
-            }
-            else{ //Searching on the higher bound
-                left = middle + 1; // the key is found on the upper bound hence needs to start searching from the middle + 1;
-            }
-        }while((location == -1) && (left <= right));
+        }
         return location;
     }
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int[] array = {1, 2, 3, 4, 5,6, 7, 8, 9, 10};
-        System.out.println("Enter the value you are looking for from 1 - 10: ");
-        int searchkey = scanner.nextInt();
-        System.out.printf("The location of %d in the array is %d",searchkey, Search(array, searchkey));
-        scanner.close();
+ public static void main(String[] args){
+    int[] sortedArray = {1, 2, 3, 5, 6, 7, 9, 10};
+    int first = 0, last = sortedArray.length - 1, middle = (last/2);
+    int SearchKey = 10;
+    int result = -1;
+    if(SearchKey == sortedArray[middle]){
+        System.out.println("The Value was found in the array in the position: "+middle);
     }
+    else if(SearchKey > sortedArray[middle]){
+        first = middle + 1;
+        result = Search(sortedArray, first, last, SearchKey);
+    }
+    else if(SearchKey < sortedArray[middle])
+    {
+        last = middle - 1;
+        result = Search(sortedArray, first, last, SearchKey);
+    }
+    else{
+        System.out.println("There was a problem attempting the search!!");
+    }
+    if(result > -1){
+        System.out.println("The Value was found in the array");
+    }
+    else{
+        System.out.println("The value was not found in the array");
+    }
+ }   
 }

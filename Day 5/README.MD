@@ -10,12 +10,12 @@
     - Merge Sorting 
 
 ## Lecture 
-### Searchiong algorithms
+### Searching algorithms
 Involves Searching if a specific content does exist within a specified arraylist or a collection of data, If the content exists then return that content or the location of that content
 - The Value that is searched is called <b>Search Key </b>
-- There are two popular search algorithms 
+- There are two popular search algorithms, Linear Search And Binary Search algorithm
 #### Linear Search
-Simple but slow. This algorithm uses loops to iterate through an Array  search each element until the the last index of an array to find the Search key
+Simple but slow. This algorithm uses loops to iterate through an Array, search each element until the the last index of an array to find the Search key
 
 ```Java 
     public static int linearSearch(int[] array, int target) {
@@ -39,7 +39,7 @@ Because this algorithm uses indexing to find the location of the key, in Java, r
     - If the sorting the data is not practivally viable
     - If simplicity is what needs to be mantained
 #### Binary Search 
-This Algorithm is applicable in Sorted arrays or Lists, This Allgorithm splits the Data in the middle, and checks the middle term:
+This Algorithm is applicable in <b> Sorted </b> arrays or Lists, This Algorithm splits the Data in the middle, and checks the middle term:
 
 ```Java
     int[] array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

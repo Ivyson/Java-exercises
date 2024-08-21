@@ -93,5 +93,5 @@ public class BinarySearch{
 ### Big O/ Time Complexity
 - Big O is a mathematical toolkit used to estimate how long could an implemented algorithm run, it oftenly gives us a worse case scenario in unit time.
 - In this toolkit we are basically inspecting the performance of the algorithm and the efficiency of the algorithm.
-- As the program executes, more memory is likely allocated to the program, the more you initialise variables, more memory is allocated to the program, this is called the stack of the process. The more memory allocated to the program, the more time required by the cpu scheduler to allocate memory hence, <important>The Less memory the algorithm needs, the more efficient the algorithm gets</important>
+- As the program executes, more memory is likely allocated to the program, the more you initialise variables, more memory is allocated to the program, this is called the stack of the process. The more memory allocated to the program, the more time required by the cpu scheduler to allocate memory hence, <b font-size= 10px>The Less memory the algorithm needs, the more efficient the algorithm gets</b>
 - 

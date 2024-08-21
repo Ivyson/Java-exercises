@@ -17,7 +17,7 @@ Involves Searching if a specific content does exist within a specified arraylist
 #### Linear Search
 Simple but slow. This algorithm uses loops to iterate through an Array  search each element until the the last index of an array to find the Search key
 
-    ```Java 
+```Java 
     public static int linearSearch(int[] array, int target) {
     for (int i = 0; i < array.length; i++) { //Iterates through each and every Element of the array 
         if (array[i] == target) { //Checks if the Search key is found
@@ -26,7 +26,7 @@ Simple but slow. This algorithm uses loops to iterate through an Array  search e
     }
     return -1; // Target not found
     }
-    ```
+ ```
 Because this algorithm uses indexing to find the location of the key, in Java, returning ` -1 ` Means that the element is not found, hence a good practice to use -1 in this instance, or even just a negative value, because a negative value means not found. 
 - Advantages
     - The advantages of this algorithm is that it is easier to implement,

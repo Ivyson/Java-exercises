@@ -91,7 +91,50 @@ public class BinarySearch{
 ```
 - Conceptualising this is complicated, needs sometime so watch a few Youtube Videos for how to implement it
 ### Big O/ Time Complexity
-- Big O is a mathematical toolkit used to estimate how long could an implemented algorithm run, it oftenly gives us a worse case scenario in unit time.
+- Big O indicates the worst-case run-time for an algorithm-that is, how hard an algorithm may have to work to solve a problem.
 - In this toolkit we are basically inspecting the performance of the algorithm and the efficiency of the algorithm.
 - As the program executes, more memory is likely allocated to the program, the more you initialise variables, more memory is allocated to the program, this is called the stack of the process. The more memory allocated to the program, the more time required by the cpu scheduler to allocate memory hence, <b font-size= 10px>The Less memory the algorithm needs, the more efficient the algorithm gets</b>
-- 
+- Big O - is concerned with how an algorithm’s runtime grows in relation to number of items processed
+    - The worse case scenario means we want the case whereby the key we are looking for is at the last index for Linear searches, this means that we have a possibility of finding the key in the first index 
+- Three Main Characterisations 
+    - O(1) complexity - This algorithm  does not depend on the amount of data sets in an  array or list, example is 
+    - O(n) complexity - The Proportion is linear between the time taken to complete the task and the amount of Dataset, 
+    - O(n^2) complexity -
+    - O(log(n)) Complexity -  
+    - O(nlog(n)) Complexity - 
+    - And Many more
+### Sorting Algorithms
+- <b> Sorting</b> - Placing some data in a specific order
+- Algorithms that have loops, has (loop1)(\times)(loop2)(\times)....(\times)(loopn) complexity
+- Types of Sorting
+    - Merging 
+    - Insertion 
+    - Selection 
+#### Selection 
+- Iterates through a list or an array, searching for the smallest element and then swapping its position.
+- This algorithm uses the following instructions, go through a dataset, find the smallest value, and then put it in the first index, repeat this step until all the data is sorted, but go through the data set multiple times to check.
+```Java
+int array = {7, 1, 10, 2, 9, 3, 5, 6};
+//Iteration 1: array = [1, 7, 10, 2, 9, 3, 5, 6]
+//Iteration 2: arra = [1, 2, 7, 10, 9, 3, 5, 6]
+//Iteration 3: arra = [1, 2, 3 ,7, 10, 9, 5, 6]
+//Iteration 3: arra = [1, 2, 3 ,5 ,7, 10, 9, 6]
+//And so on....
+```
+- Time Complexity for this algorithm = O(n^2)
+- This algorithm is simple to implement but very Slow and Inefficient.
+
+## Insertion 
+- Simple to implement but inefficient
+- Compares the two consecutive elements, checks if the first one is lesser than the second, if true then go to the next 2 pairs
+- This is much better than the selectin sorting because we are not searching the whole array but just comparing the two consecutive elements
+- Will xplain later
+
+## Merge 
+- Much much efficient but very complicated
+- Splits the array into two, and tries to sort each sub-array using recursive methods, until it reaches a base case whereby the arrays are now sorted!
+- Uses the same approach as Binary Searching Algorithm
+- Operation of this algorithm
+    - Divide - Split the array into two almost equal halves.
+    - conquier - Solve Each sub-array recursively 
+    - Merge - Merge the results and form one single array.

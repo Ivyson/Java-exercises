@@ -100,7 +100,7 @@ public class BinarySearch{
     - O(1) complexity - This algorithm  does not depend on the amount of data sets in an  array or list, example is 
     - O(n) complexity - The Proportion is linear between the time taken to complete the task and the amount of Dataset, 
     - O(n^2) complexity - The relationship between the time taken to complete the task and the data set is quadratically relarted, This means that the more data set we get, the greater the time it takes to complete the task.
-    - O(log(n)) Complexity -  Relationship between time and data sets, is logarithmically related
+    - O(log(n)) Complexity -  Relationship between time and data sets, is logarithmically related. By far, the best complexity, However it is so complicated to implement! Used in Binary Search Algorithms..
     - O(nlog(n)) Complexity -  Linearithmic relationship, This complexity is far slower compared to the actual logarithmic complexity.
     - And Many more
 ### Sorting Algorithms
@@ -126,9 +126,16 @@ int array = {7, 1, 10, 2, 9, 3, 5, 6};
 
 ## Insertion 
 - Simple to implement but inefficient
-- Compares the two consecutive elements, checks if the first one is lesser than the second, if true then go to the next 2 pairs
+- Compares the two consecutive elements, checks if the first one is lesser than or greater than the the second, if true then go to the next 2 pairs
 - This is much better than the selectin sorting because we are not searching the whole array but just comparing the two consecutive elements
-- Will xplain later
+```Java
+int[] array =  {7, 1, 10, 2, 9, 3, 5, 6};
+//Initial Array : [7, 1, 10, 2, 9, 3, 5, 6];
+//Iteration 1:[1, 7, 10, 2, 9, 3, 5, 6]; 
+//Iteration 2:[1, 7, 10, 2, 9, 3, 5, 6]; 
+//Iteration 3:[1, 2, 7, 10, 9, 3, 5, 6];
+//And so on...
+```
 
 ## Merge 
 - Much much efficient but very complicated

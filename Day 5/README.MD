@@ -99,9 +99,9 @@ public class BinarySearch{
 - Three Main Characterisations 
     - O(1) complexity - This algorithm  does not depend on the amount of data sets in an  array or list, example is 
     - O(n) complexity - The Proportion is linear between the time taken to complete the task and the amount of Dataset, 
-    - O(n^2) complexity -
-    - O(log(n)) Complexity -  
-    - O(nlog(n)) Complexity - 
+    - O(n^2) complexity - The relationship between the time taken to complete the task and the data set is quadratically relarted, This means that the more data set we get, the greater the time it takes to complete the task.
+    - O(log(n)) Complexity -  Relationship between time and data sets, is logarithmically related
+    - O(nlog(n)) Complexity -  Linearithmic relationship, This complexity is far slower compared to the actual logarithmic complexity.
     - And Many more
 ### Sorting Algorithms
 - <b> Sorting</b> - Placing some data in a specific order

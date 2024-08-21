@@ -89,7 +89,7 @@ public class BinarySearch{
     }
 }
 ```
-- Conceptualising this is complicated, needs sometime so watch a few Youtube Videos for how to implement it
+
 ### Big O/ Time Complexity
 - Big O indicates the worst-case run-time for an algorithm-that is, how hard an algorithm may have to work to solve a problem.
 - In this toolkit we are basically inspecting the performance of the algorithm and the efficiency of the algorithm.

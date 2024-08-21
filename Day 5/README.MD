@@ -103,14 +103,14 @@ public class BinarySearch{
     - O(log(n)) Complexity -  Relationship between time and data sets, is logarithmically related. By far, the best complexity, However it is so complicated to implement! Used in Binary Search Algorithms..
     - O(nlog(n)) Complexity -  Linearithmic relationship, This complexity is far slower compared to the actual logarithmic complexity.
     - And Many more
-### Sorting Algorithms
+## Sorting Algorithms
 - <b> Sorting</b> - Placing some data in a specific order
 - Algorithms that have loops, has (loop1)(\times)(loop2)(\times)....(\times)(loopn) complexity
 - Types of Sorting
     - Merging 
     - Insertion 
     - Selection 
-#### Selection 
+## Selection 
 - Iterates through a list or an array, searching for the smallest element and then swapping its position.
 - This algorithm uses the following instructions, go through a dataset, find the smallest value, and then put it in the first index, repeat this step until all the data is sorted, but go through the data set multiple times to check.
 ```Java

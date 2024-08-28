@@ -93,7 +93,7 @@ for(int i = 0; i < 5; i++){
 </tr>
 </table>
 
-### Recursive Methods
+### Recursive Method
 - The Recursive functions are expensive for computation that has limited memory resource and requires limited processor time due to an allocation of resources everytime a function call is being created, in this instance, a stack of the process is constantly growing wider and potentially reaching a stack Over-flow, whereby the process is using more resourves than the allocated resources
 - The Recursive functions are more prone to be an infinite recursion
 - The Recursive functions are normally hard to debug, so it would be better to use iterations compared to recursions

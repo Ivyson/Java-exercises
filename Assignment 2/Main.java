@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Main{
-
     public static int recursiveMultiply(int number1, int number2){
         if(number1 == 0 || number2 == 0) //Base case
         {
@@ -10,7 +9,6 @@ public class Main{
         {
             return number1 + recursiveMultiply(number1, number2+1);
         }
-        // else if()
         return number1 + recursiveMultiply(number1, number2-1);
     }
     public static void main(String[] args){
@@ -20,7 +18,6 @@ public class Main{
         System.out.print("\nEnter the Second number : ");
         int number2 = scanner.nextInt();
         System.out.println("You are multiplying "+number1+" x "+number2);
-        // System.out.println("The result is: "+recursiveMultiply(number1, number2));
         if(number1 < 0 && number2 < 0)
         {
             System.out.println("The result is: "+(-recursiveMultiply(number1, number2)));
@@ -31,8 +28,6 @@ public class Main{
         else{
             System.out.println("The result is: "+(recursiveMultiply(number1, number2)));
         }
-        // else if(number1)
-
-        scanner.close(); //Ensure that the scanner is not leaking
+        scanner.close();
     }
 }

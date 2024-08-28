@@ -91,3 +91,4 @@ while (iterator.hasNext()) {
 System.out.println(list); // Output: [Apple]
 ```
 - Test is up to Recursion, inclusive of $SELECTION_PLACEHOLDER$RecursionRecursion
+- Go through the Bubble sort algorithm -- check this out -- https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/06-IntroCV

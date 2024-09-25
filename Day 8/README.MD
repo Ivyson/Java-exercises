@@ -49,3 +49,10 @@ Example: Arrays are immutable, meaning, you cannot add or remove content within 
 # Main Content of Today
 
 ## Self - Referencial class 
+- Example: 
+```Java
+Class Account {
+    Account initialAccount; // Instance variable (Reference class)
+}
+```
+- Self referencial class is a class that references itself within the scope of that class! As shown above, this is a similar idea with recursion methods!

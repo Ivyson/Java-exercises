@@ -56,3 +56,11 @@ Class Account {
 }
 ```
 - Self referencial class is a class that references itself within the scope of that class! As shown above, this is a similar idea with recursion methods!
+
+# tREE
+- Breadth First Search
+- Depth First Search
+- Traversal method -
+    - Pre-order Traveversal
+    - In-order traversal 
+    - Post Order Traversal 

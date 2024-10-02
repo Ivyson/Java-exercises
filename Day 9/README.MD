@@ -156,4 +156,11 @@ public class Main{
 }
 ```
 - The `executor.shutdown();` does not really stop threads from executing, but it signals the running threads to stop their execution and also allows the executor to not accept any further tasks. Therefore 
-![1727863354735](image/README/1727863354735.png)
+![1727863557953](image/README/1727863557953.png)
+### Thread safety by Default v.s Thread Safety by design
+- Thead safety refers to a shared resource. 
+- The buffer allows for a specific number of data to be stored over a specific time period,  sometimes the buffer may over-flow whereby the memory is exhausted, here we need to stop writing to the buffer to prevent data loss
+    - Thread safety by Default - Refers to the Multithreading library providing management resources for the programmer
+    - Thread safety by design - The Designer or programmer has to explicitly design safety measures 
+- Normally, the designer has to manually design the thread safety to the threads to ensure syncing 
+- Atomic Operations - Sequence of instructions that cannot be interrupted when executing or cannot be done by two threads at the same time

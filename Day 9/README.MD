@@ -164,3 +164,7 @@ public class Main{
     - Thread safety by design - The Designer or programmer has to explicitly design safety measures 
 - Normally, the designer has to manually design the thread safety to the threads to ensure syncing 
 - Atomic Operations - Sequence of instructions that cannot be interrupted when executing or cannot be done by two threads at the same time
+
+
+## Test scoping -
+ - Everything not covered on test 1, excluding Threading.

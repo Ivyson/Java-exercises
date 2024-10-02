@@ -168,3 +168,4 @@ public class Main{
 
 ## Test scoping -
  - Everything not covered on test 1, excluding Threading.
+ - Exam is on 8 November

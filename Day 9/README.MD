@@ -119,5 +119,41 @@ Program - Sets of Instructions that can be executed by a computer, or Collection
 - The Executor is responsible for Creating and managing Threads (Thread pool)
 - The executor accepts an argument of Runnable, which the executor assign to the available threads to.
 - The executor Framework is recommended for custom made threads to properly manage threads.
-- Each thread has a code that it should execute, this code is enclosed under the `run()` method , and the `run()` method is declared under the Interface `Runnale`, So, each thread should implement Runnable
-interface - a blueprint of class
+- Each thread has a code that it should execute, this code is enclosed under the `run()` method , and the `run()` method is declared under the Interface `Runnable`, So, each thread should implement Runnable
+- Difference between Interface and Class -
+    - An Interface <i>declares</i> abstract method/operations
+    - Class Defines the attributes and methods /operations (Concrete)
+    - Abstract classes and Concrete method
+## Thread Syncing
+- Ensuring that there is an exclusive access to shared data, to allow only one thread to access the data each time
+- When one thread has an exclusive acces to the data, then other threads will not have access to that data. This is usually called Mutual Exclusion
+### Synchronisation using Monitors
++ Every Object has a monitor and a monitor lock, This lock can only be held by one thread.  
+- To modify an object, the thread has to acquire a lock through the Monitor locks as follows
+- To Implement Monitor: 
+```Java
+synchronized (object){
+    //Statement
+}
+```
+- Releasing of locks are automatic as soon as the closing curly brace is reached, meaning that the thread is done executing
+- If you do not want to implement the runnable, Use the Executor 
+```Java
+import java.util.*;
+public class Main{
+    public void Task1(args){
+        //Complete task 1
+    }
+    public void Task2(args){
+        //Complete task 2
+    }
+    public static void main(String[] args){
+        ExecutorService executor = new Executors.newCachedThreadPool();
+        executor.execute(Task1);
+        executor.execute(Task2);
+        executor.shutdown(); // ensures that the threads are shutdown once they have completed the task.
+    }
+}
+```
+- The `executor.shutdown();` does not really stop threads from executing, but it signals the running threads to stop their execution and also allows the executor to not accept any further tasks. Therefore 
+![1727863354735](image/README/1727863354735.png)
